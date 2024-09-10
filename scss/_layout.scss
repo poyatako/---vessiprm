@@ -1,12 +1,94 @@
 @use './mixins' as * ;
 
+.header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  margin: 0 auto;
+  width: 200px;
+  height: 50px;
+  padding: 10px;
+  z-index: 200;
+  background-color: #fff;
+
+  &-logo {
+    margin: 0 auto;
+  }
+
+  &-container {
+    width: 80%;
+    margin: 0 auto;
+
+    display: flex;
+    background-color: #fff;
+    border: 2px solid var(--main-half);
+    border-radius: 20px;
+    text-align: center;
+  }
+
+}
+
+.gnav {
+
+  &-btn {
+    display: flex;
+    margin-right: 15px;
+    position: static;
+
+    @include mq(medium) {
+      display: none;
+    }
+  }
+
+
+
+  &-menu {
+    display: none;
+
+    @include mq(medium) {
+      display: flex;
+    }
+
+    &-item {
+      margin: 15px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.main-visual {
+  margin-top: 10px;
+}
 .mv {
   &-first img{
     max-width: 100%;
+    z-index: 150;
   }
   &-second img{
     max-width: 100%;
-  }
+    z-index: 150;
+    }
+    
+    &-material {
+      top: 80px;
+      left: 10px;
+      z-index: 0;
+    
+    }
+    
+    &-text-l {
+      color: var(--text-white);
+      position: absolute;
+      font-family: var(--font-klee);
+      font-size: 1.8em;
+    }
+    
+    &-text-m {
+      color: var(--text-white);
+      position: absolute;
+      font-family: var(--font-klee);
+      font-size: 1.2em;
+}
 }
 
 .about {
@@ -21,7 +103,7 @@
   text-align: center;
 
   &-tt-container {
-    background-color: #66d378;
+
   }
 
 
@@ -40,6 +122,17 @@
 
 }
 
+.cta {
+  &-img-container {
+    display: flex;
+    max-width: 100%;
+  }
+
+  &-img-container img {
+    display: flex;
+    object-fit: contain;
+  }
+}
 .footer {
 
   &-container {
@@ -59,5 +152,4 @@
     justify-content: center;
     margin-top: 20px;
   }
-  }
-
+}

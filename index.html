@@ -4,20 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=M+PLUS+1:wght@100..900&display=swap"
+    rel="stylesheet">
 
   <title>Vessiプロモーションサイト</title>
 </head>
 
 <body>
   <header>
-    <h1 class="header-logo"><img src="/img/HeaderLogo.svg" alt=""></h1>
-    <div class="header-inner">
-      <div class="navBtn sp-only">
-        <span class="hamburger__border"></span>
-        <span class="hamburger__border"></span>
-        <p class="hamburger__text hamburger__text--open">menu</p>
-        <p class="hamburger__text hamburger__text--close">close</p>
-      </div>
+    <div class="header-container">
+      <h1 class="header-logo"><a href=""><img src="/img/HeaderLogo.svg" alt=""></a></h1>
+      <div class="gnav-btn"><img src="/img/menuicon.svg" alt=""></div>
+      <ul class="gnav-menu">
+        <li class="gnav-menu-item">about</li>
+        <li class="gnav-menu-item">point</li>
+        <li class="gnav-menu-item">lineup</li>
+        <li class="gnav-menu-item">reviews</li>
+        <li class="gnav-menu-item">faq</li>
+      </ul>
     </div>
   </header>
 
@@ -25,12 +31,14 @@
     <section class="main-visual">
       <div class="mv-first">
         <img src="/img/mv1.png" alt="メインビジュアル1">
-        <h2 class="mv-text-L">毎日、いつでもどこでも<br>使えるスニーカー。</h2>
+        <h2 class="mv-text-l">毎日、いつでもどこでも<br>使えるスニーカー。</h2>
+        <img src="/img/material1.svg" alt="" class="mv-material">
       </div>
 
       <div class="mv-second">
         <img src="/img/mv2.png" alt="メインビジュアル2">
-        <h3 class="mv-text-M">雨。雪。ぬかるみ。泥。日常。<br>靴下を濡らす心配はありません。</h3>
+        <h3 class="mv-text-m">雨。雪。ぬかるみ。泥。日常。<br>靴下を濡らす心配はありません。</h3>
+        <img src="/img/material2.svg" alt="" class="mv-material">
       </div>
     </section>
 
@@ -48,31 +56,44 @@
           <p class="moreBtn">Vessiについてさらに詳しく<span></span></p>
     </section>
 
-    <section class="point">
-      <div class="point-inner">
+    <section class="feature">
+      <div class="feature-inner">
       <h4 class="sect-title">Vessiの特徴<br>Point</h4>
-        <div class="point-1">
-          <!-- 画像とか-->
+        <div class="feature-img">
+          <!-- 画像-->
         </div>
-        <ul class="point-2">
-          <li class="point2-1">
+        <ul class="feature-item">
+          <li>
+            <p class="feature-subtitle">1.マジックレイヤー</p>
+            <p>Dyma-tex としても知られる当社の特許取得済みの 100% 防水で通気性のあるニットは、夏は涼しく、冬は暖かく、一年中足元を快適に保ちます。<br>さらに撥水層が汚れ、砂、水から守ります。</p>
+          </li>
+          <p class="feature-subtitle">2.クッション</p>
+          <p>抗菌インソールは内部をフレッシュに、そしてクラウドサポートが快適な履き心地を保ちます。</p>
+          </li>
+          </li>
+          <p class="feature-subtitle">3.ソール</p>
+          <p>超軽量で弾力性のあるヘリンボーングリップを備えたソールは、雨の日の地面の滑りにくさを保証します。</p>
+          </li>
+        </ul>
+        <ul class="point">
+          <li class="point-item">
             <p>100%防水</p>
-            <img class="point2-img" src="/img/100_water_proof.svg" alt="">
+            <img class="point-img" src="/img/100_water_proof.svg" alt="">
             <p>当社の Dyma-tex® テクノロジーにより、水の浸入を防ぎ通気性を保ちます。雪もぬかるみも泥もへっちゃらです。</p>
           </li>
-          <li class="point2-2">
+          <li class="point-item">
             <p>雲のような快適さ</p>
-            <img class="point2-img" src="/img/cloud_like_comfort.svg" alt="">
+            <img class="point-img" src="/img/cloud_like_comfort.svg" alt="">
             <p>防水性だけではありません。雲の上を歩くような心地よさも魅力。靴を脱ぎたくなくなるかも。</p>
           </li>
-          <li class="point2-3">
+          <li class="point-item">
             <p>軽量</p>
-            <img class="point2-img" src="/img/lightweight.svg" alt="">
+            <img class="point-img" src="/img/lightweight.svg" alt="">
             <p>不格好なレインブーツに別れを告げましょう。Vessiは非常に軽量なので、履いていることを忘れてしまうほどです。</p>
           </li>
-            <li class="point2-4">
+            <li class="point-item">
               <p>ビーガン素材</p>
-              <img class="point2-img" src="/img/vegan_material.svg" alt="">
+              <img class="point-img" src="/img/vegan_material.svg" alt="">
               <p>私たちが作るものは、動物性製品を一切使用していないことをお約束します。</p>
             </li>
           </ul>
@@ -144,6 +165,133 @@
 
       </div>
       </div>
+      <div class="other-item">
+        <p>Vessiには靴下、Tシャツ、バックパックなどのアパレル製品もあります。<br>もちろんどれも快適性はお墨付き！</p>
+        <img src="/img/lineup-other-img.png" alt="">
+        <div class="button">
+          <a href="#">Official Shopでアイテムを見る<img src="" alt=""></a>
+        </div>
+      </div>
+      </section>
+      
+      <section class="reviews">
+        <img src="" alt="">
+        <h4 class="sect-title">お客様の声<br>reviews</h4>
+        <div class="reviews-container">
+          <div class="reviews-card">
+            <img src="/img/icon-reviews.svg" alt="" class="reviews-img">
+            <p class="reviews-title">シャワーの直撃にも耐えた！</p>
+            <p class="reviews-text">
+              ある日、職場（作業療法士として高等介護施設）で患者のシャワーを浴びるお手伝いをしていました。ところが、彼女は立っている場所から誤って高いところを狙いすぎて、私の靴にかかってしまいました（シャワーを浴びているときによくある出来事です）。私は飛び上がり、彼女は謝りました。私たちは二人で笑いながら、目の前の仕事を続けました。作業を終えると、シャワーの直撃を受けたにも関わらず靴下は濡れていないことに気づきました！この靴がいかに素晴らしいかがわかりました。
+            </p>
+            <p class="reviews-name">- クリスタルC</p>
+          </div>
+          <div class="reviews-card">
+            <img src="/img/icon-reviews.svg" alt="" class="reviews-img">
+            <p class="reviews-title">2年半経って。。。</p>
+            <p class="reviews-text">
+              この靴は宣伝どおり、驚くほど快適で防水性があります。私はニューヨークに住んでいますが、約2年半の間、少なくとも1日3回犬の散歩をするために、ほぼ毎日これを履いていました。使用と洗濯を繰り返しても大丈夫でした。この靴が完全防水であることを証明できます。なぜならその機能が失われたのがつい先週だからです。それが私の靴の寿命だったのでしょう。
+      
+              私は今まで履いたどの靴でも W10 ですが、Vessiに限ってはW9 が私に最もフィットします。</p>
+            <p class="reviews-name">- エイリーン M</p>
+          </div>
+        </div>
+      </section>
+      
+      
+      <section class="faq">
+        <h4 class="sect-title">よくあるご質問<br>faq</h4>
+        <div class="faq-container">
+          <ul class="faq-card">
+            <li>
+              <p class="faq-que">本当に100%防水なんですか?</p>
+              <p class="faq-ans">はい。でもコーティングではありません！
+                汗と熱を逃がす一体型の層を備えた特許取得済みのニット素材により、<br>
+                足の呼吸を妨げず、同時にあらゆる外的要素を遮断します。これで水たまりもへっちゃらです。
+                <br>
+                膜層には百万個の小さな穴があり、蒸気状の水（汗）と熱はその小さな穴を通過できますが、
+                水分子は大きすぎて通過できません。<br>
+                つまり、防水加工は半永久的に続きます...もちろん、素材に大きな穴を開けない限り！
+              </p>
+            </li>
+            <li>
+              <p class="faq-que">環境に優しいですか?</p>
+              <p class="faq-ans">靴産業は、大量のエネルギー、水、材料を消費するという罪を犯しています。<br>
+                しかし、Vessiでは環境への影響を最小限に抑える、思いやりのある製造慣行を開発しました。<br>
+                当社の製品はすべて完全にビーガンであり、水と材料の廃棄物を削減する方法で作られています。<br>
+                当社の特許取得済みの防水技術である Dyma-tex® は、有害な化学物質や一時的なコーティングを使用せずに作られています。<br>
+                その結果、PFA*フリーで耐久性の高い防水製品が誕生しました。<br>
+                私たちは二酸化炭素排出量を削減し、靴業界を浄化するための新しい方法に熱心に取り組んでいます。<br>
+                続報をお楽しみに！<br>
+      
+                *フッ素樹脂の一種（パーフルオロアルコキシアルカン）
+              </p>
+            </li>
+            <li>
+              <p class="faq-que">旅行に適していますか?</p>
+              <p class="faq-ans">間違いありません！ — Vessi は、世界中を旅する冒険に最適なトラベル シューズです。<br>
+                非常に軽量で快適な履き心地で、スタイリングも簡単です。<br>
+                100% 耐候性なので、雨、雪、泥、ぬかるみ、バーの飲み物、ビーチの砂などを心配する必要はありません。<br>
+                私たちは、あなたとVessiシューズがどのように過ごしているかを知りたいと思っています。私たちのページであなたをフィーチャーできるように、ソーシャルサイトにて @vessi でぜひお知らせください。
+              </p>
+            </li>
+            <li>
+              <p class="faq-que">Vessiはビーガンですか？</p>
+              <p class="faq-ans">Vessi は 100% ビーガンで、生き物は含まれていません 🌱<br>
+                接着剤には水性接着剤を使用し、レザーとスエードはエンジニアリングの結晶です（つまり人工）。<br>
+                見える場所にも見えない場所にも動物性製品は一切含まれていません。
+              </p>
+            </li>
+            <li>
+              <p class="faq-que">保証ポリシーは何ですか?</p>
+              <p class="faq-ans">365 日保証。<br>
+                私たちはあなたとVessiが永遠に一緒にいることを望んでいます。だからこそ、私たちは品質と約束を守ります。すべての Vessi には、メーカーの欠陥に対して1年間の保証が付いています。<br>
+                Vessi を改造したり、強力な化学薬品にさらしたりすることによって発生した問題、または過度の磨耗によって欠陥が発生した場合には、弊社は補償できないことには注意してください。<br>
+                ですが、あなたのVessiの様子がおかしいと思われる場合は、遠慮せずに連絡してお知らせください。お客様のために何ができるかを確認させていただきます。<br>
+                保証請求を開始するには、まず<a href="">このフォーム</a>に記入してください。<br>
+                記入済みのフォームが当社に到着してから処理されるまで、最大14日ほどお待ちください。<br>
+      
+                *Vessi は、保証ポリシーの要件を満たさないクレームを拒否する権利を留保します。
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      
+      <section class="more">
+        <h4 class="sect-title">もっと知って、もっと安心。</h4>
+        <div class="more-container">
+          <div class="more-item">
+            <img src="" alt="">
+            <img src="" alt="">
+            <p class="more-title">80ドル以上のご注文は通常配送無料</p>
+            <p class="more-text">国際発送が不安ですか?<br>
+              80ドル以上のオーダー＋通常配送は<br>
+              Vessiが負担いたします。</p>
+          </div>
+          <div class="more-item">
+            <img src="" alt="">
+            <img src="" alt="">
+            <p class="more-title">無料交換サービス</p>
+            <p class="more-text">サイズが何か違うと感じたら。。。<br>
+              メールでご連絡いただければ、90日以内であれば<br>
+              無償で交換の手続きをさせていただきます。</p>
+          </div>
+        </div>
+      </section>
+      
+      <section class="cta">
+        <img src="" alt="">
+        <img src="" alt="">
+        <p>お気に入りの1足を見つけましょう！<br>メール会員登録でギフトもあります。</p>
+        <div class="btn"><a href="">OfficialShopを見る<img src="" alt=""></a></div>
+        <div class="cta-img-container">
+          <img src="/img/shoesAS3.png" alt="">
+          <img src="/img/shoesAT4.png" alt="">
+          <img src="/img/shoesCS1.png" alt="">
+          <img src="/img/shoesAS3.png" alt="">
+          <img src="/img/shoesAS3.png" alt="">
+        </div>
     </section>
   </main>
 
